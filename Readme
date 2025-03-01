@@ -49,6 +49,8 @@ Confidence_Aware_IL/
 │   ├── test_scenario.py       # CARLA test scenario execution
 │
 │── results/                   # CSV logs for analysis
+│── pretrained_models/         # Directory containing pretrained models
+│── reference_data/            # Reference trajectory CSV files
 │── .gitignore                 # Ignore unnecessary files
 │── README.md                  # This file
 ```
@@ -106,7 +108,6 @@ python Data Collection/preprocess_data.py --input_csv <path_to_input_csv> \
     --output_csv <path_to_output_csv> --input_dir <path_to_images> \
     --output_dir <output_directory>
 ```
-
 #### **Preprocessing Arguments:**
 - `--input_csv`: Path to input CSV file containing raw data.
 - `--output_csv`: Path to save the processed CSV file.
@@ -137,6 +138,12 @@ Analyze trajectory similarity and performance metrics:
 ```bash
 python Driving Evaluation/postprocessing.py
 ```
+
+---
+
+## 📜 Pretrained Models & Reference Data
+- **Pretrained Model:** [Download Here](https://www.dropbox.com/scl/fi/njtnclwcga4sa01sm6aan/Pretrained_model.h5?rlkey=3csab4vz9l4dkh7tvir8hug9a&st=e6x4q9tb&dl=0)
+- **Reference Trajectory Data:** [Download Here](https://www.dropbox.com/scl/fi/gjshtuld1p6va3try8q2z/reference_track.csv?rlkey=sgfcbe4p00qh5pqklg8dr5sul&st=fs5dn1gk&dl=0)
 
 ---
 
