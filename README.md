@@ -60,7 +60,6 @@ Confidence_Aware_IL/
 ## 🔹 Prerequisites
 Before setting up the environment, ensure you have the following installed:
 - **Ubuntu 20.04 LTS** (or compatible version)
-- **ROS 2 Foxy Fitzroy**
 - **CARLA Simulator** (version 0.9.13+ recommended)
 - **Python 3.8+** (recommended via Anaconda environment)
 - **Anaconda** (optional but recommended)
