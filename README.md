@@ -1,6 +1,6 @@
 # Confidence-Aware Imitation Learning (CARIL) for Autonomous Driving
 
-This repository contains the official implementation of **CARIL: Confidence-Aware Regression in Imitation Learning for Autonomous Driving**, which will be presented at **IROS 2025**. The project introduces a **dual-head neural network** combining **regression** and **classification** for end-to-end vision-based imitation learning. The classification head provides **confidence scores**, enabling a **correction mechanism** to improve driving stability in **uncertain situations**.
+This repository contains the official implementation of **CARIL: Confidence-Aware Regression in Imitation Learning for Autonomous Driving**. The project introduces a **dual-head neural network** combining **regression** and **classification** for end-to-end vision-based imitation learning. The classification head provides **confidence scores**, enabling a **correction mechanism** to improve driving stability in **uncertain situations**.
 
 ---
 
