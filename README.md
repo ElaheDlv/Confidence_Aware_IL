@@ -145,7 +145,7 @@ python Driving Evaluation/postprocessing.py
 - **Reference Trajectory Data:** [Download Here](https://www.dropbox.com/scl/fi/gjshtuld1p6va3try8q2z/reference_track.csv?rlkey=sgfcbe4p00qh5pqklg8dr5sul&st=fs5dn1gk&dl=0)
 
 ---
-
+<!-- 
 ## 📜 Citation
 If you use this repository, please cite:
 
@@ -157,7 +157,7 @@ If you use this repository, please cite:
   year      = {2025}
 }
 ```
-
+-->
 ---
 
 ## 📬 Contact
