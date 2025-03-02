@@ -116,7 +116,7 @@ python Data Collection/preprocess_data.py --input_csv <path_to_input_csv> \
 ### **3️⃣ Model Training**
 Train the imitation learning model:
 ```bash
-python Code/train.py
+python Code/train.py --epochs 50 --batch_size 32 --learning_rate 0.0001 --save_model_path pretrained_models/final_trained_model.h5
 ```
 
 ### **4️⃣ Model Evaluation**
