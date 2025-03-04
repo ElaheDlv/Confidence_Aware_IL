@@ -145,10 +145,10 @@ python Driving Evaluation/postprocessing.py
 - **Reference Trajectory Data:** [Download Here](https://www.dropbox.com/scl/fi/gjshtuld1p6va3try8q2z/reference_track.csv?rlkey=sgfcbe4p00qh5pqklg8dr5sul&st=fs5dn1gk&dl=0)
 
 ---
-<!-- 
+
 ## 📜 Citation
 If you use this repository, please cite:
-
+<!-- 
 ```bibtex
 @inproceedings{Delavari2025CARIL,
   author    = {Elahe Delavari and Aws Khalil and Jaerock Kwon},
@@ -158,6 +158,18 @@ If you use this repository, please cite:
 }
 ```
 -->
+```bibtex
+@misc{delavari2025carilconfidenceawareregressionimitation,
+      title={CARIL: Confidence-Aware Regression in Imitation Learning for Autonomous Driving}, 
+      author={Elahe Delavari and Aws Khalil and Jaerock Kwon},
+      year={2025},
+      eprint={2503.00783},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2503.00783}, 
+}
+```
+
 ---
 
 ## 📬 Contact
