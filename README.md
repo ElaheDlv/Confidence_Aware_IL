@@ -97,7 +97,7 @@ pip install -r requirements.txt
 ### **1️⃣ Data Collection**
 Collect driving data in CARLA using the data collection script:
 ```bash
-python Data Collection/collect_data.py --town Town04
+python Data\ Collection/collect_data.py --town Town04
 ```
 
 ### **2️⃣ Data Preprocessing**
@@ -106,6 +106,10 @@ Normalize, augment, and filter the collected data:
 python Data Collection/preprocess_data.py --input_csv <path_to_input_csv> \
     --output_csv <path_to_output_csv> --input_dir <path_to_images> \
     --output_dir <output_directory>
+```
+For instance it can be considered as
+```bash
+python Data\ Collection/preprocess_data.py --input_csv ./output_data/control_commands.csv --output_csv ./output_modified_images/control_commands_modified.csv --input_dir ./output_data/front_rgb/ --output_dir ./output_modified_images/front_rgb/
 ```
 #### **Preprocessing Arguments:**
 - `--input_csv`: Path to input CSV file containing raw data.
