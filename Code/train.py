@@ -26,8 +26,8 @@ def main(args):
     y_valid_cont, y_valid_class = zip(*y_valid)
 
     # Data Generators
-    train_generator = DataGenerator(X_train, y_train_cont, y_train_class, args.batch_size, augment=['Flip', 'bright'])
-    valid_generator = DataGenerator(X_valid, y_valid_cont, y_valid_class, args.batch_size, augment=['Flip', 'bright'])
+    train_generator = DataGenerator(X_train, y_train_cont, y_train_class, args.batch_size, augment=['Flip', 'no'])
+    valid_generator = DataGenerator(X_valid, y_valid_cont, y_valid_class, args.batch_size, augment=['Flip', 'no'])
     
     # Load Model
     model = get_resnet_model_with_two_outputs()

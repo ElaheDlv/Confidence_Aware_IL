@@ -103,7 +103,7 @@ python Data\ Collection/collect_data.py --town Town04
 ### **2️⃣ Data Preprocessing**
 Normalize, augment, and filter the collected data:
 ```bash
-python Data Collection/preprocess_data.py --input_csv <path_to_input_csv> \
+python Data\ Collection/preprocess_data.py --input_csv <path_to_input_csv> \
     --output_csv <path_to_output_csv> --input_dir <path_to_images> \
     --output_dir <output_directory>
 ```
@@ -120,7 +120,8 @@ python Data\ Collection/preprocess_data.py --input_csv ./output_data/control_com
 ### **3️⃣ Model Training**
 Train the imitation learning model:
 ```bash
-python Code/train.py --epochs 50 --batch_size 32 --learning_rate 0.0001 --save_model_path pretrained_models/final_trained_model.h5
+python Code/train.py --data_csv ./output_modified_images/control_commands_modified.csv --epochs 50 --batch_size 32 --lr 0.0001 --image_dir ./output_modified_images/front_rgb/ --experiment_name first_experiment
+
 ```
 
 ### **4️⃣ Model Evaluation**
