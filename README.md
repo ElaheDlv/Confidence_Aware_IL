@@ -127,20 +127,24 @@ python Code/train.py --data_csv ./output_modified_images/control_commands_modifi
 ### **4️⃣ Model Evaluation**
 Evaluate the trained model on the validation set:
 ```bash
-python Code/evaluate.py
+python Code/evaluate.py --model_path pretrained_models/<experiment_name> --labels_path <path_to_csv> --images_directory <path_to_image>
+```
+For instance:
+```bash
+python Code/evaluate.py --model_path pretrained_models/first_experiment_final.h5 --labels_path output_modified_images_test/control_commands_modified.csv --images_directory output_modified_images_test/front_rgb/
 ```
 
 ### **5️⃣ Testing with CARLA**
 Test the model in CARLA using predefined driving scenarios:
 ```bash
-python Driving Evaluation/test_scenario.py --correction True
+python Driving\ Evaluation/test_scenario.py --correction True
 ```
 Logs are saved in `results/`.
 
 ### **6️⃣ Post-Processing & Analysis**
 Analyze trajectory similarity and performance metrics:
 ```bash
-python Driving Evaluation/postprocessing.py
+python Driving\ Evaluation/postprocessing.py
 ```
 
 ---

@@ -7,17 +7,23 @@ from sklearn.metrics import confusion_matrix, classification_report, f1_score
 import pandas as pd
 from data_loader import DataGenerator
 import os
+import argparse
+
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Evaluate model and plot confusion matrix.")
+parser.add_argument('--model_path', type=str, required=True, help='Path to the trained model file (h5 format).')
+parser.add_argument('--labels_path', type=str, required=True, help='Path to the CSV file containing test labels.')
+parser.add_argument('--images_directory', type=str, required=True, help='Directory path containing test images.')
+
+args = parser.parse_args()
 
 # Load the trained model
-model_path = "final_trained_model.h5"
-model = tf.keras.models.load_model(model_path)
+model = tf.keras.models.load_model(args.model_path)
 
 # Load test dataset
-labels_path = "your_test_labels.csv"  # Update with actual test CSV path
-images_directory = "your_test_image_folder"  # Update with actual path
-df_test = pd.read_csv(labels_path)
+df_test = pd.read_csv(args.labels_path)
 
-test_images = [os.path.join(images_directory, fname) for fname in df_test['Image_Fname'].values]
+test_images = [os.path.join(args.images_directory, fname) for fname in df_test['Image_Fname'].values]
 test_continuous = df_test['Steering'].values
 test_classes = df_test['Steering_Class'].values
 
