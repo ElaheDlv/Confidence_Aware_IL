@@ -62,7 +62,7 @@ def process(continuous_output, discrete_output, bin_edges, confidence_threshold=
     return final_output
 
 # Load the trained model
-saved_model_path = 'final_trained_model.h5' 
+saved_model_path = './pretrained_models/first_experiment_final.h5' 
 loaded_model = tf.keras.models.load_model(saved_model_path)
 
 # Connect to CARLA
